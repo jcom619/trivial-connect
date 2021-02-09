@@ -1,17 +1,32 @@
 # **** TRIVIAL-CONNECT
 
-## using a quiz api to interfere with each turn
+## uuser prompted
+
+![s5](player-prompt.png)
+
+## player takes their turn
+
+![s5](opening.png)  
+
+### after a back and forth of turns
+
+ ![s5](win.png)  
+
+#### ...if it's a tie
+
+ ![s5](no-win.png)
+
+### if I have time
 
 ### applying a conditional statement to only allow a turn upon answering the quiz question correctly
 
-### I believe this will make connect four a good game
+| ![s5](welcome.png)
 
-#### ...for once
+### I ca do this with the quizApi.io
 
-![s5](scene-zero.png)  |  ![s5](scene-win.png)  |
------------------------|------------------------|
- ![s5](no-win.png)     | ![s5](scene-five.png)  |
------------------------|------------------------|
+![s5](scene-two.png)
+
+![s5](scene-three.png)
 
 ### later I think applying an option to toggle the restricted turns for an "easy mode" would be good
 
