@@ -93,11 +93,66 @@ function loadDOM() {
 function createBoard() {
   for (let i = 0; i < 49; i++) {
     let div = document.createElement("div");
-        div.setAttribute("data-id", i);
-        div.className = "square";
-        if (i >= 42) {
-            div.className = "taken";
-        }
-        board.appendChild(div);
+    div.setAttribute("data-id", i);
+    div.className = "square";
+    if (i >= 42) {
+      div.className = "taken";
     }
+    board.appendChild(div);
+  }
+}
+
+//clickBoard function
+
+function clickBox() {
+  let squares = document.querySelectorAll(".board div");
+  let click = parseInt(this.dataset.id);
+  if (
+    squares[click + 7].classList.contains("taken") &&
+    !squares[click].classList.contains("taken")
+  ) {
+    if (currentPlayer === 1) {
+      currentPlayer = 2;
+      player.innerText = currentPlayer;
+      this.className = "player-one taken";
+      checkWon();
+    } else if (currentPlayer === 2) {
+      currentPlayer = 1;
+      player.innerText = currentPlayer;
+      this.className = "player-two taken";
+      checkWon();
+    }
+    if (box === 42) {
+      setTimeout(() => alert("boxes filled"), 300);
+      setTimeout(() => (restart.style.display = "flex"), 500);
+    }
+  } else {
+    alert(
+      "You cannot build on an empty space or on a space that has been built on"
+    );
+  }
+}
+
+//the checkWon function
+
+function checkWon() {
+  let squares = document.querySelectorAll(".board div");
+  for (let y = 0; y < winningArray.length; y++) {
+    let square = winningArray[y];
+    if (square.every((q) => squares[q].classList.contains("player-one"))) {
+      setTimeout(() => alert("player one(red) wins "), 200);
+      setTimeout(() => (restart.style.display = "flex"), 500);
+    } else if (
+      square.every((q) => squares[q].classList.contains("player-two"))
+    ) {
+      setTimeout(() => alert("player two(yellow) wins"), 200);
+      setTimeout(() => (restart.style.display = "flex"), 500);
+    }
+  }
+}
+
+function reset() {
+  board.innerHTML = "";
+  loadDOM();
+  restart.style.display = "none";
 }
