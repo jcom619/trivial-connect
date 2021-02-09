@@ -2,31 +2,31 @@
 
 ## uuser prompted
 
-![s5](player-prompt.png)
+![s5](assets/player-prompt.png)
 
 ## player takes their turn
 
-![s5](opening.png)  
+![s5](assets/opening.png)  
 
 ### after a back and forth of turns
 
- ![s5](win.png)  
+ ![s5](assets/win.png)  
 
 #### ...if it's a tie
 
- ![s5](no-win.png)
+ ![s5](assets/no-win.png)
 
 ### if I have time
 
 ### applying a conditional statement to only allow a turn upon answering the quiz question correctly
 
-| ![s5](welcome.png)
+| ![s5](assets/welcome.png)
 
 ### I ca do this with the quizApi.io
 
-![s5](scene-two.png)
+![s5](assets/scene-two.png)
 
-![s5](scene-three.png)
+![s5](assets/scene-three.png)
 
 ### later I think applying an option to toggle the restricted turns for an "easy mode" would be good
 
