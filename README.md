@@ -1,15 +1,35 @@
-# trivia-connect
+# **** TRIVIAL-CONNECT
 
-![](scene-one.png)<br><hr>
+## uuser prompted
 
-## Once your game starts you are prompted with a multiple choice trivia question   
-![](scene-two.png)<br><hr>
-## once you answer (assuming it is correct) you proceed to your turn by clicking the desired column
-![](scene-three.png)<br><hr>
-## otherwise, yoor turn skips and the next player takes their turn
-![](scene-four.png)
+![s5](player-prompt.png)
 
-## player 2 then takes their turn
-![](scene-five.png)
-## once one of the players has made a row of four the screen pops up with a congrats modal
-![](scene-six.png)
+## player takes their turn
+
+![s5](opening.png)  
+
+### after a back and forth of turns
+
+ ![s5](win.png)  
+
+#### ...if it's a tie
+
+ ![s5](no-win.png)
+
+### if I have time
+
+### applying a conditional statement to only allow a turn upon answering the quiz question correctly
+
+| ![s5](welcome.png)
+
+### I ca do this with the quizApi.io
+
+![s5](scene-two.png)
+
+![s5](scene-three.png)
+
+### later I think applying an option to toggle the restricted turns for an "easy mode" would be good
+
+### perhaps also a record of wins, losses and other stats per game player would add a nice touch
+
+### additionally I am considering an option to modify the row/column amount for longer or shorter game configuration
