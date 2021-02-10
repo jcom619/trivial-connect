@@ -107,19 +107,23 @@ function createBoard() {
 function clickBox() {
   let squares = document.querySelectorAll(".board div");
   let click = parseInt(this.dataset.id);
+  console.log(this);
   if (
-    squares[click + 7].classList.contains("taken") &&
-    !squares[click].classList.contains("taken")
+    // squares[click + 7].classList.contains("taken") &&
+    !squares[click].classList.contains("filled")
   ) {
+    // checks to see if square is already filled
     if (currentPlayer === 1) {
       currentPlayer = 2;
       player.innerText = currentPlayer;
-      this.className = "player-one taken";
+      this.classList.add("player-one");
+      this.classList.add("filled");
       checkWon();
     } else if (currentPlayer === 2) {
       currentPlayer = 1;
       player.innerText = currentPlayer;
-      this.className = "player-two taken";
+      this.classList.add("player-two");
+      this.classList.add("filled");
       checkWon();
     }
     if (box === 42) {
@@ -127,7 +131,7 @@ function clickBox() {
       setTimeout(() => (restart.style.display = "flex"), 500);
     }
   } else {
-    alert(
+    console.log(
       "You cannot build on an empty space or on a space that has been built on"
     );
   }
