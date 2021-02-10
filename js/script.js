@@ -140,19 +140,20 @@ function checkWon() {
   for (let y = 0; y < winningArray.length; y++) {
     let square = winningArray[y];
     if (square.every((q) => squares[q].classList.contains("player-one"))) {
-      setTimeout(() => alert("player one(red) wins "), 200);
+      // setTimeout(() => alert("player one(red) wins "), 200);
       setTimeout(() => (restart.style.display = "flex"), 500);
     } else if (
       square.every((q) => squares[q].classList.contains("player-two"))
     ) {
-      setTimeout(() => alert("player two(yellow) wins"), 200);
+      // setTimeout(() => alert("player two(yellow) wins"), 200);
       setTimeout(() => (restart.style.display = "flex"), 500);
     }
   }
+  console.log(squares);
 }
 
 function reset() {
-  board.innerHTML = "";
+  board.innerText = "";
   loadDOM();
   restart.style.display = "none";
 }

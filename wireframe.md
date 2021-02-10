@@ -1,32 +1,29 @@
-# **** TRIVIAL-CONNECT
+# Trivia-Connect
 
-## uuser prompted
+## user prompted
 
-![s5](assets/player-prompt.png)
+| ![s5](assets/images/player-prompt.png) | ![s5](assets/images/opening.png) |
+| -------------------------------------- | -------------------------------- |
 
-## player takes their turn
+### player takes their turn | after a back and forth of turns
 
-![s5](assets/opening.png)  
+![s5](assets/images/win.png)
 
-### after a back and forth of turns
+### ...if it's a tie
 
- ![s5](assets/win.png)  
+![s5](assets/images/no-win.png)
 
-#### ...if it's a tie
-
- ![s5](assets/no-win.png)
+![s5](assets/images/welcome.png)
 
 ### if I have time
 
 ### applying a conditional statement to only allow a turn upon answering the quiz question correctly
 
-| ![s5](assets/welcome.png)
+![s5](assets/images/scene-two.png)
 
 ### I ca do this with the quizApi.io
 
-![s5](assets/scene-two.png)
-
-![s5](assets/scene-three.png)
+![s5](assets/images/scene-three.png)
 
 ### later I think applying an option to toggle the restricted turns for an "easy mode" would be good
 
