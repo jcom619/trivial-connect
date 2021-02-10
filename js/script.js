@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", loadDOM);
-
 let board = document.querySelector(".board");
 let player = document.querySelector(".player");
 let playAgain = document.querySelector(".playAgain");
@@ -77,6 +75,8 @@ let winningArray = [
   [13, 20, 27, 34],
 ];
 let currentPlayer = 1;
+
+document.addEventListener("DOMContentLoaded", loadDOM);
 
 function loadDOM() {
   createBoard();
