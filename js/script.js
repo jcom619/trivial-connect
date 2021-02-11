@@ -98,7 +98,7 @@ function createBoard() {
     if (i >= 42) {
       div.className = "taken";
     }
-    board.appendChild(div);
+    if (i < 42) board.appendChild(div);
   }
 }
 
@@ -107,10 +107,13 @@ function createBoard() {
 function clickBox() {
   let squares = document.querySelectorAll(".board div");
   let click = parseInt(this.dataset.id);
-  console.log(this);
+  // let filled = document.querySelector(".taken");
+  // console.log(this);
+  // debugger;
   if (
-    // squares[click + 7].classList.contains("taken") &&
-    !squares[click].classList.contains("filled")
+    (squares[click - 7].classList.contains(".filled") &&
+      !squares[click].classList.contains("filled"))
+    
   ) {
     // checks to see if square is already filled
     if (currentPlayer === 1) {
@@ -126,8 +129,8 @@ function clickBox() {
       this.classList.add("filled");
       checkWon();
     }
-    if (box === 42) {
-      setTimeout(() => alert("boxes filled"), 300);
+    if (box === 41) {
+      setTimeout(() => console.log("boxes filled"), 300);
       setTimeout(() => (restart.style.display = "flex"), 500);
     }
   } else {
@@ -144,12 +147,12 @@ function checkWon() {
   for (let y = 0; y < winningArray.length; y++) {
     let square = winningArray[y];
     if (square.every((q) => squares[q].classList.contains("player-one"))) {
-      // setTimeout(() => alert("player one(red) wins "), 200);
+      setTimeout(() => alert("player one(red) wins "), 200);
       setTimeout(() => (restart.style.display = "flex"), 500);
     } else if (
       square.every((q) => squares[q].classList.contains("player-two"))
     ) {
-      // setTimeout(() => alert("player two(yellow) wins"), 200);
+      setTimeout(() => ("player two(yellow) wins"), 200);
       setTimeout(() => (restart.style.display = "flex"), 500);
     }
   }
