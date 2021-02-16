@@ -71,12 +71,14 @@ table {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  width: 85%;
+  width: 65%;
   height: 85%;
   top: 9rem;
   border: 30px solid rgba(217, 228, 58, 0.322);
   border-radius: 70px;
-  padding: 0.5rem;
+  padding: 0;
+  margin-left: 20%;
+  margin-right: 2%0;
   box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.535), -15px 10px 30px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521), -1px 1px 3px #070101, inset 0 1px 15px black;
 
 }
