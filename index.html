@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="shortcut icon"
-      href="assets/images/connect.png"
-      type="image/x-icon"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.75" />
-    <title>connectMORE</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="blobs-container">
-        <div class="blob red"></div>
-      </div>
-      <div class="container">
-        <div class="currentPlayer">
-          <h1 class="title fade-in textA">CONNECT-MORE</h1>
-          <h3 class="fade-in textA turnStatus">
-            player <br /><span class="player"> </span> <br />take your turn
-          </h3>
-          <div class="fade-in board"></div>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" mimetype="text/css" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect Four</title>
+</head>
+<body>
+
+    <!-- <div id="open-modal" class="modal-window">
+    <div>
+        <a href="#" title="Close" class="modal-close">Close</a>
+        <h1>Voilà!</h1>
+        <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+        <div><small>Check out</small></div>
+        <a href="https://aminoeditor.com" target="_blank">👉 Amino: Live CSS Editor for Chrome</div>
         </div>
-        <div class="fade-in blob red restart">
-          <h1 class=" blob red">success!</h1>
-          <button class="playAgain">play again</button>
-          <h2>player</h2>
-          <h1 class="currentPlayer"></h1>
-          <h2>wins</h2>
-        </div>
-      </div>
-    </main>
-    <script src="js/script.js"></script>
-  </body>
+    </div> -->
+    
+    <h1 class="fade-in">Connect Four</h1>
+
+    <h3 class="player-turn"></h3>
+    <a target="_blank" href="https://github.com/conorbailey90/JS-Connect-Four"><i class="fab fa-github"></i></a> 
+
+    <div class="container">
+
+    <table>
+        <tr>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+        </tr>
+        <tr>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+        </tr>
+        <tr>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+        </tr>
+        <tr>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+        </tr>
+        <tr>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+        </tr>
+        <tr>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+            <td class="slot"></td>
+        </tr>
+        
+</div>
+
+<div class="reset">Reset</div>
+
+    
+<script src="app.js"></script>
+</body>
 </html>
