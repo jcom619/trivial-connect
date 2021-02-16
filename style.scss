@@ -15,9 +15,9 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  background-image: url('assets/images/always-grey.png');
   background-color: #ccb714;
   background-image: url("../assets/images/always-grey.png");
+  box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535), inset 0px 0px 50px rgba(180, 0, 0, 0.535), inset 1px 1px 3px rgba(255, 255, 255, 0.521), -1px 1px 3px #070101, inset 0px 0px 20px rgba(0, 0, 0, 0.535), inset 0 1px 15px black;
 
 }
 
@@ -31,7 +31,7 @@ body {
 h1 {
   font-size: 5em;
   text-shadow: 1px 1px 20px #0f0101, -1px -1px 5px #0f0101, 0px 0px 10px #e2d1d1;
-   font-family: Phosphate;
+  font-family: Phosphate;
   color:rgb(217, 228, 58)
 }
 
