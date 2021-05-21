@@ -126,7 +126,11 @@ table {
     padding: 0.5rem;
   }
 }
-
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 5px;
+  }
+}
 .fade-in {
   animation: fadeIn ease 3.5s;
   -webkit-animation: fadeIn ease 3.5s;
