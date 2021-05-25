@@ -83,3 +83,21 @@ body {
   transform: scale(1);
   opacity: 1;
 }
+
+@media (max-width: 500px) {
+  #modalBtn {
+    padding: 2px 6px;
+    border: 1px solid white;
+    font-size: 0.4em;
+  }
+  body {
+    font-size: .5em;
+  }
+  h3 {
+    font-size: 4em;
+  }
+  .answerChoice {
+    margin-left: 0;
+    font-size: .75em;
+    margin: 0.1em;
+}
