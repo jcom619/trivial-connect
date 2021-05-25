@@ -49,10 +49,10 @@ body {
 
 .content {
   /* border-radius: 30px; */
-  padding: 50px;
+  padding: 30px;
   /* margin-top: 25%; */
   background-color: rgba(0, 0, 0, 0.1);
-  width: 90%;
+/*   width: 90%; */
   height: 100vh;
   /* margin: auto; */
   backdrop-filter: blur(10px);
