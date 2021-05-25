@@ -8,19 +8,18 @@
 } */
 
 body {
-   display: inline;
-   position: relative;
+  display: inline-flexbox;
+  position: absolute;
   box-sizing: border-box;
-
+  top: 0;
   margin: 0;
   /* margin-top: -3.3%; */
   padding: 0;
   -webkit-box-sizing: border-box;
   text-align: center;
-   height: 100vh;
-  background-color: #050504e8;
-  box-shadow: inset 0 0 10px 5px rgb(134, 31, 31);
-
+  height: 100vh;
+  width: 100vw;
+  box-shadow:inset 0 0 10px 2px rgb(0, 0, 0), inset 0 0 140px 15px rgb(21, 67, 204);
 }
 h1 {
   font-size: 3em;
@@ -44,19 +43,21 @@ a:hover {
   opacity: 0.7;
 }
 table {
-  background: #0a2097;
+  text-align: center;
+  position: relative;
   -webkit-box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
     0px 0px 50px rgba(180, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
     -1px 1px 3px #070101, 0px 0px 20px rgba(0, 0, 0, 0.535),
     inset 0 1px 15px black;
   box-shadow: inset 5px 2px 20px 10px rgb(33, 31, 14),
     0px 0px 5px 2px rgb(0, 0, 0), 1px 1px 3px rgba(255, 255, 255, 0.521),
-    -1px 1px 3px #070101, 0px 0px 20px rgb(255, 5, 5), inset 0 0 7px 2px black;
-  border: 10px solid rgb(211, 232, 18);
-  border-radius: 40px;
-  padding: 10px;
-  width: 80%;
-  margin: 10%;
+    -1px 1px 3px #070101, 0px 0px 20px 2px rgb(6, 58, 107), inset 0 0 7px 2px black;
+  border: 1px solid rgb(211, 232, 18);
+  border-radius: 20px;
+  padding: 15px;
+  max-height: 70vh;
+  min-width: 50vw;
+  margin: auto;
 }
 .square {
   background: #888888;
@@ -91,44 +92,36 @@ table {
   height: 100%;
   /* margin: 50%; */
   /* padding: 5px; */
-  -webkit-box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
+  /* -webkit-box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
     inset 5px 20px 30px rgba(0, 0, 0, 0.535);
   box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
-    inset 5px 20px 30px rgba(0, 0, 0, 0.535);
+    inset 5px 20px 30px rgba(0, 0, 0, 0.535); */
 }
 
 .reset {
-  position: relative;
-  bottom: -100px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
-  width: 4em;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  background: #a6a80bf8;
-  border: 1px solid whitesmoke;
-  cursor: pointer;
-  -webkit-box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.535),
-    15px 10px 30px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
-    -1px 1px 3px #070101, inset 0 1px 15px black;
-  box-shadow: 5px 20px 30px rgba(102, 4, 4, 0.535),
-    15px 10px 30px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
-    -1px 1px 3px #070101, inset 0 1px 15px black;
-  border-radius: 40px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 25px;
-  font-family: chalkduster;
+   position:absolute;
+   width: 20%;
+   padding: 2px;
+   bottom: 0;
+   margin: 1em;
+   background: rgb(218, 193, 9);
+   text-shadow: 1px 1px 5px rgb(12, 9, 9);
+   box-shadow: 0 0 30px rgb(3, 3, 3), inset 0 0 4px 1px black;
+   color: rgb(229, 232, 79);
+   border: 2px solid white;
+   border-radius: 30px;
+   font-size: 1.4em;
+   cursor: pointer;
+   transition: all 0.3s;
 }
 .reset:hover {
   -webkit-transition: 0.8s;
   transition: 0.5s;
   -webkit-box-shadow: 0px 0px #888888;
   box-shadow: 1px 4px 10px rgba(102, 4, 4, 0.535),
-  1px 3px 10px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
-  -1px 1px 3px #070101, inset 0 1px 5px 3px rgba(24, 2, 2, 0.87), inset 0 0 2px 1px rgba(199, 8, 8, 0.87);
+    1px 3px 10px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
+    -1px 1px 3px #070101, inset 0 1px 5px 3px rgba(24, 2, 2, 0.87),
+    inset 0 0 2px 1px rgba(199, 8, 8, 0.87);
 }
 
 .fade-in {
@@ -165,21 +158,36 @@ td {
   padding: 0px;
 }
 
-@media screen and (max-width: 600px) {
-  /* .container {
-     position: absolute;
-     left: 50%;
-     -webkit-transform: translate(-50%);
-     transform: translate(-50%);
-     width: 90%;
-     height: 520px;
-     top: 9rem;
-     border: 2px solid black;
-     padding: 0.5rem;
- 
-     width: 100%;
-    padding-bottom: 100%;
+@media screen and (min-width: 1000px) {
+  table {
+    background: #0a2097;
+    text-align: center;
     position: relative;
-    background-color: #2980b9;
-   }  */
+    max-height: 55vh;
+    min-width: 40vw;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .reset {
+    font-size: 2em;
+  }
+  table {
+    background: #08155e;
+    text-align: center;
+    position: relative;
+    max-height: 45vh;
+    min-width: 80vw;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  table {
+    padding: 1px;
+  }
+  td {
+    box-shadow: inset 1px 2px 4px 1px rgb(0, 0, 0);
+    border: 0.5px solid rgb(5, 32, 59);
+  }
 }
