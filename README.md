@@ -1,5 +1,7 @@
 # **** TRIVIAL-CONNECT
 
+https://jcom619.github.io/trivial-connect/
+
 ## uuser prompted
 
 ![s5](assets/images/player-prompt.png)
