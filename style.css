@@ -1,0 +1,185 @@
+/* @font-face {
+  font-family: Phosphate;
+  src: url(../assets/fonts/Phosphate.ttc);
+}
+@font-face {
+  font-family: Chalkduster;
+  src: url(../assets/fonts/Chalkduster.ttf);
+} */
+
+body {
+   display: inline;
+   position: relative;
+  box-sizing: border-box;
+
+  margin: 0;
+  /* margin-top: -3.3%; */
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+   height: 100vh;
+  background-color: #050504e8;
+  box-shadow: inset 0 0 10px 5px rgb(134, 31, 31);
+
+}
+h1 {
+  font-size: 3em;
+  text-shadow: 5px 3px 20px #680b0b, 1px 1px 10px #e20808, 0px 0px 4px #070101;
+  color: #fdffa0bf;
+}
+h3 {
+  opacity: 0.7;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #0f0101, -1px -1px 5px #0f0101, 0px 0px 10px #e2d1d1;
+}
+a {
+  position: relative;
+  font-size: 3rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  color: rgb(139, 97, 97);
+}
+a:hover {
+  opacity: 0.7;
+}
+table {
+  background: #0a2097;
+  -webkit-box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
+    0px 0px 50px rgba(180, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
+    -1px 1px 3px #070101, 0px 0px 20px rgba(0, 0, 0, 0.535),
+    inset 0 1px 15px black;
+  box-shadow: inset 5px 2px 20px 10px rgb(33, 31, 14),
+    0px 0px 5px 2px rgb(0, 0, 0), 1px 1px 3px rgba(255, 255, 255, 0.521),
+    -1px 1px 3px #070101, 0px 0px 20px rgb(255, 5, 5), inset 0 0 7px 2px black;
+  border: 10px solid rgb(211, 232, 18);
+  border-radius: 40px;
+  padding: 10px;
+  width: 80%;
+  margin: 10%;
+}
+.square {
+  background: #888888;
+  z-index: -5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  /* margin: ; */
+  border-radius: 50%;
+}
+
+.circle {
+  z-index: -4;
+  position: absolute;
+  /* flex-direction: column; */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* margin: 1%; */
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  /* border-width: 4px; */
+  /* border-color: #27ae60; */
+  /* border-style: solid; */
+  border-radius: 50%;
+}
+.slot {
+  background: #888888;
+  width: 100%;
+  height: 100%;
+  /* margin: 50%; */
+  /* padding: 5px; */
+  -webkit-box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
+    inset 5px 20px 30px rgba(0, 0, 0, 0.535);
+  box-shadow: inset 5px 20px 30px rgba(0, 0, 0, 0.535),
+    inset 5px 20px 30px rgba(0, 0, 0, 0.535);
+}
+
+.reset {
+  position: relative;
+  bottom: -100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 4em;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  background: #a6a80bf8;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.535),
+    15px 10px 30px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
+    -1px 1px 3px #070101, inset 0 1px 15px black;
+  box-shadow: 5px 20px 30px rgba(102, 4, 4, 0.535),
+    15px 10px 30px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
+    -1px 1px 3px #070101, inset 0 1px 15px black;
+  border-radius: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 25px;
+  font-family: chalkduster;
+}
+.reset:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 0px #888888;
+  box-shadow: 1px 4px 10px rgba(102, 4, 4, 0.535),
+  1px 3px 10px rgba(0, 0, 0, 0.535), 1px 1px 3px rgba(255, 255, 255, 0.521),
+  -1px 1px 3px #070101, inset 0 1px 5px 3px rgba(24, 2, 2, 0.87), inset 0 0 2px 1px rgba(199, 8, 8, 0.87);
+}
+
+.fade-in {
+  animation: fadeIn ease 3.5s;
+  -webkit-animation: fadeIn ease 3.5s;
+  -moz-animation: fadeIn ease 3.5s;
+  -o-animation: fadeIn ease 3.5s;
+  -ms-animation: fadeIn ease 3.5s;
+}
+@-webkit-keyframes fadeIn-3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn-3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* |||||||||||||||||||||||||||||||||||| */
+
+td {
+  box-shadow: inset 1px 2px 10px 3px rgb(0, 0, 0);
+  border-radius: 50%;
+  background: #151c88;
+  border: 2px solid rgb(253, 251, 251);
+  padding: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  /* .container {
+     position: absolute;
+     left: 50%;
+     -webkit-transform: translate(-50%);
+     transform: translate(-50%);
+     width: 90%;
+     height: 520px;
+     top: 9rem;
+     border: 2px solid black;
+     padding: 0.5rem;
+ 
+     width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: #2980b9;
+   }  */
+}
