@@ -1,13 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" mimetype="text/css" href="style.scss">
+    <link rel="stylesheet" mimetype="text/css" href="style.css">
+    <link rel="stylesheet" mimetype="text/css" href="popup.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Connect Four</title>
+    <title>ConnecTrivia</title>
 </head>
 <body>
+
 
     <!-- <div id="open-modal" class="modal-window">
     <div>
@@ -19,74 +22,99 @@
         </div>
     </div> -->
     
-    <h1 class="fade-in">Connect Four</h1>
+    <h1 class="fade-in">ConnecTrivia</h1>
 
     <h3 class="player-turn"></h3>
-    <a target="_blank" href="https://github.com/conorbailey90/JS-Connect-Four"><i class="fab fa-github"></i></a> 
+    <a target="_blank" href="https://github.com/conorbailey90/JS-Connect-Four"><em
+         class="fab fa-github"></em></a> 
 
-    <div class="container">
+    <!-- <div class="square"> -->
 
-    <table>
-        <tr>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
+    <table aria-hidden="true" class="table">
+        <tr class="">
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
         </tr>
         <tr>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
         </tr>
         <tr>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
         </tr>
         <tr>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
         </tr>
         <tr>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
         </tr>
         <tr>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
-            <td class="slot"></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
+            <td class="backgroundColor"><div class="square"><div class="circle slot"></div></div></td>
         </tr>
         
-</div>
-
+</table>
+<!-- |||||||||||||||||| -->
+<div class="container">
+  
+    <button id="modalBtn">Connect </button>
+      
+      <div id="thisModal" class="modal">
+        
+        <div class="content">
+          <div class="close">
+            <span></span>
+            <span></span>
+          </div>
+          <h1>Question:</h1>
+          <h3>some random trivia question</h3>
+          <h1>Answer:</h1>
+          <button class="answerChoice"> <h4>multichoice A</h4> </button>
+          <button class="answerChoice"> <h4>multichoice B</h4> </button>
+          <button class="answerChoice"> <h4>multichoice C</h4> </button>
+        </div>
+        
+      </div>
+   
+      
+<!-- |||||||||||||||||| -->
 <div class="reset">Reset</div>
-
+</div>
     
-<script src="app.js"></script>
+<script src="script.js"></script>
+<script src="popup.js"></script>
 </body>
 </html>
